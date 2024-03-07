@@ -1,0 +1,111 @@
+.escola-bg {
+  padding-top: 4rem;
+  background-color: var(--c01);
+  justify-content: center;
+}
+
+.escola {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.eape, .patricia {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 6rem;
+  color: var(--c13);
+  position: relative;
+
+}
+
+.eape {
+  text-transform: uppercase;
+  margin: 0 7.5rem 2rem 2rem;
+}
+
+.eape::before {
+  content: '';
+  background: url('../img/OpenDoor.svg');
+  width: 6rem;
+  height: 6rem;
+  line-height: 120px;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.about-container p {
+  font-family: var(--font-main);
+  color: var(--c10);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 2.125rem 0 2.125rem 7.5rem;
+}
+
+.about-img img {
+  width: 100%;
+  margin: 2.125rem 7.5rem 2.125rem 0;
+  border-radius: 5px;
+}
+
+.patricia-container {
+  display: flex;
+  gap: 7.5rem;
+}
+
+.patricia {
+  align-self: flex-start;
+  position: relative;
+  margin: 2.125rem 7.5rem 2.125rem 11.5rem;
+}
+
+.patricia::before {
+  content: '';
+  background-image: url('../img/Next.svg');
+  width: 6rem;
+  height: 6rem;
+  line-height: 120px;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+}
+
+.patricia-container p {
+  font-family: var(--font-main);
+  color: var(--c10);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 2.125rem 7.5rem 2.125rem 0;
+}
+
+.patricia-img {
+  border-radius: 50%;
+  margin: 2.125rem 0 2.125rem 7.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-container p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1.125rem 0 1.125rem 4.5rem;
+  }
+
+  .patricia-container p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 2.125rem 7.5rem 2.125rem 0;
+  }
+
+  .about-img {
+    margin: 1.125rem 4.5rem 1.125rem 0;
+  }
+}

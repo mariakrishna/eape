@@ -1,0 +1,10 @@
+/*Externos*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Russo+One&display=swap');
+/*Gerais*/
+@import url('./_reset.css');
+@import url('./_variables.css');
+@import url('./_geral.css');
+/*Sessões*/
+@import url('./_header.css');
+@import url('./_main.css');
+@import url('./_about.css');

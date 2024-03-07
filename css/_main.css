@@ -1,0 +1,150 @@
+.main-bg {
+  background-color: var(--c12);
+  justify-content: center;
+}
+
+.main {
+  padding: 2.125rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.875rem;
+  color: var(--c01);
+}
+
+.main-img {
+  margin: 4.125rem 7.5rem 4.125rem 2rem;
+}
+
+.main-img img {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.main-content h1 {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  margin: 2.125rem 0 2.125rem 7.5rem;
+  width: 7ch;
+  position: relative;
+}
+
+.main-content h1::after {
+  content: '';
+  background: url('../img/BassClef.svg');
+  width: 6rem;
+  height: 6rem;
+  line-height: 120px;
+  position: absolute;
+  top: 195px;
+  right: -64px;
+}
+
+.main-content p {
+  font-family: var(--font-main);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--c05);
+  line-height: 40px;
+  position: relative;
+  width: 20ch;
+  margin: 4.125rem 0 4.125rem 7.5rem;
+  padding: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.main-content p::after {
+  content: '';
+  background: var(--p01);
+  width: 4px;
+  height: 120px;
+  line-height: 120px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-img {
+    margin: 0 1rem;
+  }
+
+  .main-img img {
+    width: 100%;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    gap: 2rem
+  }
+
+  .main-content h1 {
+    font-size: 4rem;
+    margin: 1.125rem 0 1.125rem 2.5rem;
+  }
+
+  .main-content h1::after {
+    content: '';
+    background: url('../img/Bass\ Clef-64.svg');
+    width: 4rem;
+    height: 4rem;
+    top: 130px;
+    right: -48px;
+  }
+
+  .main-content p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    margin: 1.125rem 0 1.125rem 2.5rem;
+    padding: 1.25rem 0 1.25rem 1.25rem;
+  }
+
+  .main-content p::after {
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  .main {
+    gap: 0;
+    justify-content: center;
+  }
+  
+  .main-img {
+    display: none;
+  }
+
+  .main-content h1 {
+    font-size: 3.8em;
+    margin: 1rem 0 1rem 2rem;
+  }
+
+  .main-content p {
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin: 1.125rem 0 1.125rem 2.5rem;
+    padding: 1rem 0 1rem 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main-content h1::after {
+    display: none;
+  }
+
+  .main-content h1 {
+    font-size: 3.8em;
+    margin: 1.5rem 0;
+  }
+
+  .main-content p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    margin: 1.5rem 0;
+  }
+}

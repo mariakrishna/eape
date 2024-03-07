@@ -1,0 +1,70 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.red {
+  color: var(--p01);
+}
+
+.green {
+  color: var(--s01);
+}
+
+.btn-red {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0225rem;
+  color: var(--c01);
+  border: var(--p03) solid 3px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  margin: 2.125rem 0 2.125rem 7.5rem;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn-red:hover {
+  background-color: var(--p03);
+  
+}
+
+.btn-green {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0225rem;
+  color: var(--c13);
+  border: var(--s03) solid 3px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  margin: 2.125rem 7.5rem 2.125rem 0;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn-green:hover {
+  background-color: var(--s03);
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  .btn-red, .btn-green {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .btn-red, .btn-green {
+    margin: 1rem 0 1rem 1rem;
+  }
+}
