@@ -1,4 +1,152 @@
-.professores {
-  padding-top: 4rem;
+.professores-bg {
+  padding: 4rem 2rem;
   background-color: var(--c01);
 }
+
+.professores {
+  display: flex;
+  flex-direction: column;
+}
+
+.professores h2 {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 6rem;
+  color: var(--c13);
+  position: relative;
+  margin: 2.125rem 0 2.125rem 7.5rem;
+}
+
+.professores p {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--c08);
+  width: 400px;
+  margin: 1rem 0;
+  align-self: flex-end;
+}
+
+.professores h2::before {
+  content: '';
+  background-image: url('../img/Voice.svg');
+  width: 6rem;
+  height: 6rem;
+  line-height: 120px;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+}
+
+.swiper {
+  margin: 0 7.5rem;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.swiper-slide p {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--c08);
+  margin: 10px 0 10px 75px;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: var(--c08);
+}
+
+@media only screen and (max-width: 1024px) {
+  .swiper-slide {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .professores-bg {
+    padding: 2rem 1rem;
+  }
+
+  .professores h2 {
+    font-size: 3rem;
+  }
+
+  .swiper {
+    margin: 0;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+  }
+
+  .swiper-slide p {
+    margin: 10px 0 10px 10px;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  .professores h2 {
+    font-size: 1.9rem;
+    line-height: 2;
+    margin: 0 0 1.5rem 3rem;
+  }
+
+  .professores h2::before {
+    content: '';
+    background-image: url('../img/Voice-64.svg');
+    width: 4rem;
+    height: 4rem;
+    line-height: 80px;
+    top: 0px;
+    left: -55px;
+  }
+
+  .professores p {
+    font-size: 1rem;
+    line-height: 1.2;
+    width: auto;
+  }
+
+  .swiper-slide p {
+    font-size: 1rem;
+    margin: 10px 0 10px 15px;
+  }
+
+  }
+
+  @media only screen and (max-width: 380px) {
+    .professores-bg {
+      padding: .5rem;
+    }
+
+    .professores h2 {
+      font-size: 1.7rem;
+      line-height: 2;
+      margin: 0 0 1.5rem 3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .professores h2 {
+      font-size: 1.3rem;
+      line-height: 2;
+      margin: 0 0 0 2rem;
+    }
+
+    .professores h2::before {
+      content: '';
+      background-image: url('../img/Voice-32.svg');
+      width: 2rem;
+      height: 2rem;
+      line-height: 80px;
+      top: 4px;
+      left: -30px;
+    }
+
+    .professores p {
+      text-align: center;
+    }
+  }

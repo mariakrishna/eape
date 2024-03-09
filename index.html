@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EAPE - Espaço de Artes Patrícia Evans</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header container">
@@ -46,15 +46,19 @@
             turpis a felis. Nulla a purus a turpis interdum maximus sit amet vel
             lorem.
           </p>
-          <img class="about-img" src="./img/img-about.jpg" alt="O EAPE" />
+          <div class="about-img">
+            <img src="./img/img-about.jpg" alt="O EAPE" />
+          </div>
         </div>
         <h2 class="patricia">Patricia Evans</h2>
         <div class="patricia-container">
-          <img
-            class="patricia-img"
-            src="./img/Patricia.png"
-            alt="Patricia Evans"
-          />
+          <div>
+            <img
+              class="patricia-img"
+              src="./img/Patricia.png"
+              alt="Patricia Evans"
+            />
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             ultrices eleifend elit non maximus. Cras odio massa, imperdiet ac
@@ -71,6 +75,10 @@
     <section class="professores-bg" id="professores">
       <div class="professores container">
         <h2>Professores do EAPE</h2>
+        <p>
+          Todos os professores do EAPE são formados por Patrícia Evans e que
+          trabalham o mesmo método.
+        </p>
         <!-- Slider main container -->
         <div class="swiper">
           <!-- Additional required wrapper -->
@@ -85,10 +93,21 @@
               <p>Sophia Fried</p>
             </div>
             <div class="swiper-slide">
-              <img src="./img/sophia.png" alt="Sophia Toscano" />
+              <img src="./img/sofia.png" alt="Sofia Toscano" />
               <p>Sofia Toscano</p>
             </div>
-            ...
+            <div class="swiper-slide">
+              <img src="./img/krishna.png" alt="Maria Krishna" />
+              <p>Maria Krishna</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider1.png" alt="Maria Krishna" />
+              <p>Nanashi Yami</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider2.png" alt="Maria Krishna" />
+              <p>Nanashi Yami</p>
+            </div>
           </div>
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
@@ -96,8 +115,75 @@
         </div>
       </div>
     </section>
-    <footer class="contato" id="contato"></footer>
-    <script src="./js/script.js"></script>
+    <section class="depoimentos-bg">
+      <div class="depoimentos container">
+        <h2>Depoimentos</h2>
+        <div class="depoimentos-container">
+          <iframe
+            src="https://www.youtube.com/embed/mgY7V-nB3VI?si=QHBl-NI9oMXOcl3r"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/mgY7V-nB3VI?si=QHBl-NI9oMXOcl3r"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/mgY7V-nB3VI?si=QHBl-NI9oMXOcl3r"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#" class="btn-depoim btn-red">Veja Mais</a>
+      </div>
+    </section>
+    <footer class="contato container" id="contato">
+      <a href="#" class="logo"
+        ><span class="red">EA</span><span class="green">PE</span></a
+      >
+      <div class="contato-container">
+        <div class="contato-info">
+          <p class="endereco">
+            Av. Princesa Isabel, 323, sala 1212, Copacabana, Rio de Janeiro - RJ
+          </p>
+          <p class="telefone">
+            <a href="tel:####">(21) 99888-7775</a>
+          </p>
+          <p class="instagram">
+            <a href="#">@eape.rj</a>
+          </p>
+          <p class="facebook">
+            <a href="#">/EspacodeArtesPatriciaEvans</a>
+          </p>
+        </div>
+        <div class="contato-form">
+          <form action="">
+            <label for="nome">
+              <input type="text" placeholder="Nome" />
+            </label>
+            <label for="email">
+              <input type="email" placeholder="E-mail" />
+            </label>
+            <label for="mensagem">
+              <textarea placeholder="mensagem"> </textarea>
+            </label>
+            <button>Enviar</button>
+          </form>
+        </div>
+      </div>
+      <p class="creditos">
+        Credits - design/code -
+        <a href="https://mariakrishna.github.io/" target="_blank"
+          >@mariakrishna</a
+        >
+      </p>
+      <p class="direitos">All rights Reserved ©</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

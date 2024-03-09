@@ -6,11 +6,6 @@
   font-family: var(--font-display);
 }
 
-.logo {
-  font-size: 4rem;
-  margin: 34px 0 34px 120px;
-}
-
 .header-menu {
   display: flex;
   flex-wrap: wrap;

@@ -51,14 +51,14 @@
 }
 
 .about-img img {
-  width: 100%;
-  margin: 2.125rem 7.5rem 2.125rem 0;
+  margin: 2.125rem 8rem 2.125rem 0;
   border-radius: 5px;
 }
 
 .patricia-container {
   display: flex;
   gap: 7.5rem;
+  align-items: center;
 }
 
 .patricia {
@@ -93,19 +93,186 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .escola {
+    padding: 0 50px 0 0;
+  }
+  
+  .eape {
+    margin: 0 .5rem 2rem 2rem;
+  }
+
+  .about-container {
+    gap: 3.5rem;
+  }
   .about-container p {
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 1.125rem 0 1.125rem 4.5rem;
+    width: 400px;
   }
 
   .patricia-container p {
     font-size: 1.5rem;
     line-height: 2rem;
-    margin: 2.125rem 7.5rem 2.125rem 0;
+    margin: 2.125rem 2.5rem 2.125rem 0;
+  }
+
+  .about-img img {
+    width: 100%;
+    margin: 1.125rem 4.5rem 1.125rem 0;
+  }
+
+  .patricia {
+    margin: 2.125rem 7.5rem 2.125rem 10rem;
+  }
+
+  .patricia-img {
+    border-radius: 50%;
+    margin: 1.125rem 0 1.125rem 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .escola {
+    padding: 0 25px 0 0;
+  }
+  
+  .eape {
+    margin: 0 1.5rem 1rem 1rem;
+  }
+
+  .about-container {
+    gap: 2rem;
+
+  }
+
+  .about-container p {
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    margin: .125rem 0 .125rem 2.5rem;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+
+  .patricia {
+    margin: 1.125rem 0 1.125rem 7.5rem;
+  }
+
+  .patricia-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .patricia-container p {
+    margin: 1.125rem 2rem 1.125rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .escola-bg {
+    padding: 0;
+  }
+  
+  .escola {
+    padding: 0;
+  }
+
+  .eape {
+    font-size: 3rem;
+    margin: 0 1rem 0 0;
+  }
+
+  .eape::before {
+    content: '';
+    background: url('../img/OpenDoor-64.svg');
+    width: 4rem;
+    height: 4rem;
+    line-height: 120px;
+    position: absolute;
+    top: 10px;
+    left: -60px;
+  }
+  
+  .about-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 10px 0 20px;
   }
 
   .about-img {
-    margin: 1.125rem 4.5rem 1.125rem 0;
+    display: flex;
+    justify-content: center;
   }
+
+  .about-img img {
+    width: 80%;
+    margin: 0;
+    align-self: center;
+  }
+
+  .about-container p, .patricia-container p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+    width: auto;
+  }
+
+  .patricia {
+      font-size: 3rem;
+      line-height: 1.4;
+      margin: 2rem 0 0 4.2rem;
+  }
+
+  .patricia::before {
+    content: '';
+    background-image: url('../img/Next-64.svg');
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0pc;
+    left: -65px;
+   }
+
+   .patricia-img {
+    margin: 0;
+   }
+
+   .patricia-container {
+    margin: 0 10px 0 20px;
+   }
+} 
+
+@media only screen and (max-width: 380px) {
+  
+  .about-img img {
+    width: 70%;
+  }
+
+  .patricia-img {
+    width: 100%;
+  }
+
+  .patricia {
+    font-size: 2rem;
+    margin: 2rem 0 0 3.2rem;
+  }
+
+  .patricia::before {
+    content: '';
+    background-image: url('../img/Next-32.svg');
+    width: 32px;
+    height: 32px;
+    top: 5px;
+    left: -35px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .patricia {
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin: 2rem 0 0 4.2rem;
+}
 }

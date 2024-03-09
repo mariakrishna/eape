@@ -1,0 +1,13 @@
+.contato-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 34px 120px 34px 120px;
+  color: var(--c01);
+  font-family: var(--font-main);
+}
+
+.telefone a, .instagram a, .facebook a {
+  font-family: var(--font-main);
+}
+

@@ -121,15 +121,22 @@
 
   .main-content h1 {
     font-size: 3.8em;
-    margin: 1rem 0 1rem 2rem;
+    margin: 1rem 0 1rem 1rem;
   }
 
   .main-content p {
     font-size: 1.5rem;
     line-height: 30px;
-    margin: 1.125rem 0 1.125rem 2.5rem;
+    margin: 1rem 0 1rem 0;
     padding: 1rem 0 1rem 1.25rem;
   }
+
+  .main-content p::after {
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 }
 
 @media only screen and (max-width: 320px) {

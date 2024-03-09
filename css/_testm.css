@@ -1,0 +1,126 @@
+.depoimentos-bg {
+  background-color: var(--c12);
+}
+
+.depoimentos {
+  display: grid;
+  grid-template-rows: 0.1fr 2fr 0.01fr;
+  grid-auto-rows: minmax(15px, auto);
+}
+
+.depoimentos a:last-child {
+  grid-row: 3; 
+  height: 10px; 
+}
+
+.depoimentos h2 {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--c01);
+  position: relative;
+  margin: 40px 0 40px 120px;
+}
+
+.depoimentos h2::after {
+  content: '';
+  background: url('../img/MusicHeart.svg');
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: -18px;
+  left: -110px;
+}
+
+.depoimentos-container {
+  display: flex;
+  justify-self: center;
+}
+
+.depoimentos-container iframe {
+  width: 380px;
+  height: 234px;
+  margin: 30px
+}
+
+.btn-depoim {
+  justify-self: end;
+  padding: 30px 18px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .depoimentos h2 {
+    margin: 2.125rem 7.5rem 2.125rem 11.5rem;
+  }
+
+  .btn-depoim {
+    margin: 2rem 7.5rem 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 1268px) {
+  .depoimentos-container iframe {
+    width: 280px;
+    height: 172.5px;
+    margin: 30px
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .depoimentos h2 {
+    margin: 1rem 7.5rem 1rem 11.5rem;
+  }
+
+  .depoimentos-container iframe {
+    width: 220px;
+    height: 135.5px;
+    margin: 30px
+  }
+
+  .btn-depoim {
+    margin: 0 7.5rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .depoimentos-container iframe {
+    width: 180px;
+    height: 110.8px;
+    margin: 30px
+  }
+
+  .btn-depoim {
+    justify-self: end;
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+    .depoimentos-container {
+      flex-direction: column;
+    }
+
+    .depoimentos h2 {
+      font-size: 2rem;
+      margin: 1rem 0 1rem 4.2rem;
+    }
+
+    .depoimentos h2::after {
+      content: '';
+      background: url('../img/MusicHeart-64.svg');
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      top: -15px;
+      left: -62px;
+    }
+
+    .depoimentos-container iframe {
+      width: 220px;
+      height: 135.5px;
+      margin: 30px
+    }
+
+    .btn-depoim {
+      margin: 0 1.5rem 0 0;
+    }
+}
