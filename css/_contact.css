@@ -1,13 +1,183 @@
+.contato {
+  padding: 3.5rem 0;
+}
 .contato-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 34px 120px 34px 120px;
+  margin: 34px 120px 34px 220px;
   color: var(--c01);
   font-family: var(--font-main);
+  gap: 80px;
+}
+
+.contato-info {
+  max-width: 350px;
+  position: relative;
+}
+
+.contato-info p {
+  position: relative;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .telefone a, .instagram a, .facebook a {
   font-family: var(--font-main);
+  color: var(--c01);
+
 }
 
+.telefone a:hover, .instagram a:hover, .facebook a:hover {
+  color: var(--c07);
+
+}
+
+.endereco::before {
+  display: flex;
+  content: '';
+  background: url('../img/Vector.svg');
+  width: 17px;
+  height: 24px;
+  top: 4px;
+  left: -25px;
+  position: absolute;
+}
+
+.telefone::before {
+  display: flex;
+  content: '';
+  background: url('../img/WhatsApp.svg');
+  width: 24px;
+  height: 24px;
+  top: 0px;
+  left: -30px;
+  position: absolute;
+}
+
+.instagram::before {
+  display: flex;
+  content: '';
+  background: url('../img/Instagram.svg');
+  width: 24px;
+  height: 24px;
+  top: 0px;
+  left: -30px;
+  position: absolute;
+}
+
+.facebook::before {
+  display: flex;
+  content: '';
+  background: url('../img/Facebook.svg');
+  width: 24px;
+  height: 24px;
+  top: 0px;
+  left: -30px;
+  position: absolute;
+}
+
+.telefone a:hover, .instagram a:hover, .facebook a:hover {
+  color: var(--c07);
+}
+.contato-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  min-width: 550px;
+}
+
+.col-2 {
+  grid-column: span 2 ;
+}
+
+.contato-form input[type='text'],
+.contato-form input[type='email'],
+.contato-form textarea {
+  color: var(--c01);
+  font-size: 20px;
+  line-height: 1.5;
+  background: var(--c12);
+  font-weight: 600;
+  border-radius: 20px;
+  border: var(--p03) solid 2px;
+  padding: 12px 0 12px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contato-form input[type='text']::placeholder,
+.contato-form input[type='email']::placeholder,
+.contato-form textarea::placeholder {
+  font-family: var(--font-main);
+  color: var(--c07);
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.contato-form input[type='text']:focus,
+.contato-form input[type='email']:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border-color: var(--p03);
+  background-color: var(--c13);
+  box-shadow: 0 0 0 2px var(--c10);
+}
+
+.btn-contato {
+  box-sizing: border-box;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0225rem;
+  color: var(--c01);
+  background: transparent;
+  cursor: pointer;
+  border: var(--s03) solid 3px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  margin: 2.125rem 1.5rem 2.125rem 0;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  align-self: end;
+  grid-column: 2;
+}
+
+.creditos, .direitos, .creditos a {
+  line-height: 1.5;
+  font-family: var(--font-main);
+  font-size: 12px;
+  color: var(--c01);
+  text-align: center;
+}
+
+.btn-contato:hover {
+  background-color: var(--s03);
+}
+
+@media only screen and (max-width: 1024px) {
+  .contato-container {
+    margin: 34px 80px 34px 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contato-form form {
+    min-width: 375px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .contato-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .contato-form form {
+    min-width: 300px;
+  }
+}

@@ -72,6 +72,10 @@
   .btn-green {
     margin: 2.125rem 3rem 2.125rem 0;
   }
+
+  .logo {
+    margin: 34px 0 34px 80px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
